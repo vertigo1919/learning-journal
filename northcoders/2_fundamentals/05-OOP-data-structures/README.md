@@ -2,12 +2,12 @@
 
 An object-based implementation of common linear data structures in JavaScript using factory functions and prototypal inheritance.
 
-## 📦 Components
+## Components
 
-1.  **Stack (LIFO):** Last-In, First-Out data structure (Size limited).
+1.  **Stack (LIFO):** Last-In, First-Out data structure with quantity property.
 2.  **Linear Queue (FIFO):** First-In, First-Out data structure with `front` and `back` pointers.
 
-## ⚡ Performance (Big O)
+## Performance (Big O)
 
 | Operation                     | Stack | Queue |
 | :---------------------------- | :---: | :---: |
@@ -16,7 +16,7 @@ An object-based implementation of common linear data structures in JavaScript us
 | **Peek**                      | O(1)  | O(1)  |
 | **Space Complexity**          | O(n)  | O(n)  |
 
-## 🚀 Usage
+## Usage
 
 ### Linear Queue
 
@@ -54,9 +54,4 @@ This project includes a full test suite using Jest.
 
 ```bash
 npm test
-
-```
-
-```
-
 ```
