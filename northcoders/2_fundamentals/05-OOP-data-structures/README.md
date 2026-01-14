@@ -25,11 +25,11 @@ const { createQueue } = require("./queues");
 
 const myQueue = createQueue(5); // Max size: 5
 
-myQueue.enQueue("Apple");
-myQueue.enQueue("Banana");
+myQueue.enQueue("Andrea");
+myQueue.enQueue("Maria");
 
-console.log(myQueue.peek()); // 'Apple'
-console.log(myQueue.deQueue()); // Removes 'Apple'
+console.log(myQueue.peek()); // 'Andrea'
+console.log(myQueue.deQueue()); // Removes 'Andrea'
 console.log(myQueue.getQuantity()); // 1
 ```
 
@@ -40,17 +40,17 @@ const { createStack } = require("./stack");
 
 const myStack = createStack(3); // Max size: 3
 
-myStack.customPush("Page 1");
-myStack.customPush("Page 2");
+myStack.Push("Apple");
+myStack.Push("Pear");
 
-console.log(myStack.peek()); // 'Page 2'
-myStack.customPop(); // Removes 'Page 2'
+console.log(myStack.peek()); // 'Pear'
+myStack.Pop(); // Removes 'Pear'
 console.log(myStack.isEmpty()); // false
 ```
 
 ## 🧪 Running Tests
 
-This project includes a full test suite using Jest.
+This project includes a full test suite using Jest as well as a basic-usage.js.
 
 ```bash
 npm test

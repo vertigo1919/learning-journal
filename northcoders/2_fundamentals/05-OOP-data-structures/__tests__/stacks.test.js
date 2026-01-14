@@ -24,7 +24,7 @@ describe("createStack()", () => {
   });
 
   describe("push()", () => {
-    test("push works on an an empty stack", () => {
+    test("push works on an empty stack", () => {
       const testStack = createStack();
       testStack.push("apple");
       expect(testStack.storage).toEqual({ 1: "apple" });
