@@ -1,6 +1,6 @@
-# Stack & Linear Queue ADTs
+# Stack ADT & Linear Queue ADT
 
-An object-based implementation of common linear data structures in JavaScript using factory functions and prototypal inheritance.
+An object-based implementation of two common ADTs in JavaScript using factory functions and prototypal inheritance.
 
 ## Components
 
