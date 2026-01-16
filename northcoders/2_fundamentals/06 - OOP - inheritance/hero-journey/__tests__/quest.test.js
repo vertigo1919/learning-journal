@@ -2,7 +2,7 @@ const Quest = require("../src/quest");
 const Hero = require("../src/hero");
 const {
   Encounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
   CombatEncounter,
 } = require("../src/encounter");
@@ -56,7 +56,7 @@ describe("attempt(hero)", () => {
     );
     testQuest.addEncounter(new CombatEncounter("Three Trolls", 4));
     testQuest.addEncounter(
-      new ExplortionEncounter("Escaping goblin tunnels", 3)
+      new ExplorationEncounter("Escaping goblin tunnels", 3)
     );
     testQuest.addEncounter(new TreasureEncounter("a Magic Ring"));
 

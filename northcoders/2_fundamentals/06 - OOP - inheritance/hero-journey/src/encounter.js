@@ -10,7 +10,7 @@ class Encounter {
   }
 }
 
-class ExplortionEncounter extends Encounter {
+class ExplorationEncounter extends Encounter {
   constructor(description, challengeLevel) {
     super(description, challengeLevel);
   }
@@ -45,7 +45,7 @@ class CombatEncounter extends Encounter {
 
 module.exports = {
   Encounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
   CombatEncounter,
 };

@@ -2,7 +2,7 @@
 const Hero = require("./hero");
 const {
   Encounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
   CombatEncounter,
 } = require("./encounter"); */

@@ -4,7 +4,7 @@ const {
   ExplorationEncounter,
   TreasureEncounter,
   CombatEncounter,
-} = require("../src/encounterencounter");
+} = require("../src/encounter");
 
 describe("encounter()", () => {
   test("check that new encounter gets created with correct properties", () => {

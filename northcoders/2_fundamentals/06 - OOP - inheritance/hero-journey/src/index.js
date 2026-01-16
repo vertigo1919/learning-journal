@@ -4,7 +4,7 @@ const Saga = require("./saga");
 const {
   Encounter,
   CombatEncounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
 } = require("./encounter");
 
@@ -25,7 +25,7 @@ const throughTheWild = new Quest(
 );
 throughTheWild.addEncounter(new CombatEncounter("Three Trolls", 4));
 throughTheWild.addEncounter(
-  new ExplortionEncounter("Navigating the goblin tunnels", 3)
+  new ExplorationEncounter("Navigating the goblin tunnels", 3)
 );
 throughTheWild.addEncounter(new TreasureEncounter("a Magic Ring"));
 

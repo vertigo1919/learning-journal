@@ -3,7 +3,7 @@
 //Encounter,
 //CombatEncounter,
 //TreasureEncounter,
-//ExplortionEncounter,
+//ExplorationEncounter,
 //} = require(".//encounter");
 
 class Quest {
@@ -25,15 +25,17 @@ class Quest {
     console.log(`${hero.name} attempts the quest: ${this.title}`);
     let resolvedEncounters = [];
     for (let item of this.encounters) {
-      const result = item.resolve(hero);
-      console.log(result);
-      resolvedEncounters.push(item.description);
+      const outcome = item.resolve(hero);
+      console.log(outcome);
 
       if (hero.isBroken()) {
         console.log(`${hero.name} failed the quest: ${this.title}\n`);
         return resolvedEncounters;
       }
+
+      resolvedEncounters.push(item.description);
     }
+
     console.log(`${hero.name} completed the quest: ${this.title}\n`);
     return resolvedEncounters;
   }
@@ -47,7 +49,7 @@ module.exports = Quest;
 //  "A hero leaves the safety of the Shire to set out on an adventure"
 //);
 //testQuest.addEncounter(new CombatEncounter("Three Trolls", 0));
-//testQuest.addEncounter(new ExplortionEncounter("Escaping goblin tunnels", 2));
+//testQuest.addEncounter(new ExplorationEncounter("Escaping goblin tunnels", 2));
 //testQuest.addEncounter(new TreasureEncounter("a Magic Ring"));
 
 //testQuest.attempt(testHero);

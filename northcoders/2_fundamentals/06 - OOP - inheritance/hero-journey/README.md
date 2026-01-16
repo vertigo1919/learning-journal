@@ -43,7 +43,7 @@ const Quest = require("./quest");
 const Saga = require("./saga");
 const {
   CombatEncounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
 } = require("./encounter");
 
@@ -51,7 +51,7 @@ const bilbo = new Hero("Bilbo");
 
 const quest = new Quest("The Hobbit", [
   new CombatEncounter("Three Trolls"),
-  new ExplortionEncounter("The Lonely Mountain"),
+  new ExplorationEncounter("The Lonely Mountain"),
   new TreasureEncounter("Arkenstone"),
 ]);
 
