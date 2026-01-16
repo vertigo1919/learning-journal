@@ -1,7 +1,7 @@
 const Hero = require("../src/hero");
 const {
   Encounter,
-  ExplortionEncounter,
+  ExplorationEncounter,
   TreasureEncounter,
   CombatEncounter,
 } = require("../src/encounterencounter");
@@ -25,26 +25,26 @@ describe("method in encounter()", () => {
   });
 });
 
-describe("explortionEncounter()", () => {
-  test("check that new explortionEncounter gets created with correct properties", () => {
-    const testExplortionEncounter = new ExplortionEncounter(
-      "this is a test explortionEncounter",
+describe("explorationEncounter()", () => {
+  test("check that new explorationEncounter gets created with correct properties", () => {
+    const testExplorationEncounter = new ExplorationEncounter(
+      "this is a test explorationEncounter",
       2
     );
-    expect(testExplortionEncounter).toEqual({
-      description: "this is a test explortionEncounter",
+    expect(testExplorationEncounter).toEqual({
+      description: "this is a test explorationEncounter",
       challengeLevel: 2,
     });
   });
   test("check explore(hero)", () => {
-    const testExplortionEncounter = new ExplortionEncounter(
-      "this is a test explortionEncounter",
+    const testExplorationEncounter = new ExplorationEncounter(
+      "this is a test explorationEncounter",
       2
     );
     const testHero = new Hero("Bob");
-    const exploreReturn = testExplortionEncounter.resolve(testHero);
+    const exploreReturn = testExplorationEncounter.resolve(testHero);
     expect(exploreReturn).toBe(
-      "Bob explores: this is a test explortionEncounter"
+      "Bob explores: this is a test explorationEncounter"
     );
     expect(testHero.courage).toBe(8);
   });
