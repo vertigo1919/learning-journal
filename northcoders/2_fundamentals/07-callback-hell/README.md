@@ -19,17 +19,22 @@ A series of challenges to practice **Asynchronous Programming** using the **Call
 
 ## Usage
 
-Run the tests:
+1. Run the tests:
 
 ```bash
 npm test
 
 ```
 
+2. Run the Manual Demo I wrote: To see the asynchronous logs appearing in real-time (proving the non-blocking behavior):
+   Bash
+
+node index.js
+
 Example usage:
 
 ```javascript
-const { fetchAllCats } = require("./solution");
+const { fetchAllCats } = require("./cat-server");
 
 console.log("1. Starting request...");
 
