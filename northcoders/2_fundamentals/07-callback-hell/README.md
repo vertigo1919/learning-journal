@@ -11,7 +11,8 @@ A series of challenges to practice **Asynchronous Programming** using the **Call
 
 ## Project Structure
 
-- **cat-server.js** – My implementation of the logic
+- **index.js** – A manual demo script that runs all functions in parallel
+- **cat-server.js** – My implementation of the wrapper logic
 - **utils/server.js** – Mock server simulating network delays _(Provided by Northcoders)_
 - **\_\_tests\_\_** – Test suite _(Provided by Northcoders)_
 
