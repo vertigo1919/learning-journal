@@ -1,0 +1,15 @@
+{
+  "name": "callback-hell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "generate": "node ./generate.js",
+    "remove-project": "node ./remove-project.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.2"
+  }
+}
