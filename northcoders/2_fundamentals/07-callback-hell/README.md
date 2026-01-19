@@ -13,7 +13,7 @@ A series of challenges to practice **Asynchronous Programming** using the **Call
 
 - **cat-server.js** – My implementation of the logic
 - **utils/server.js** – Mock server simulating network delays _(Provided by Northcoders)_
-- \***\*tests\*\*** – Test suite _(Provided by Northcoders)_
+- **\_\_tests\_\_** – Test suite _(Provided by Northcoders)_
 
 **Note:** My work focused on the logic within `solution.js`. The server simulation and testing environment were provided as part of the course.
 
@@ -52,5 +52,3 @@ fetchAllCats((err, cats) => {
 
 - Refactor the logic using **Promises** to flatten nested callbacks
 - Upgrade to **Async/Await** syntax
-- Replace the mock server with real API calls using **fetch**
-- Add **TypeScript** for stricter response handling
