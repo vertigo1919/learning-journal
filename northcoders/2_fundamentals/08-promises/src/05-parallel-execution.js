@@ -7,7 +7,6 @@ const { readFile } = require("node:fs");
 function countWords(filePath) {
   return readFilePromise(filePath, "utf-8").then((data) => {
     let newArray = data.split(" ");
-    console.log(newArray.length);
     return newArray.length;
   });
 }
