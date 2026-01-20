@@ -1,0 +1,19 @@
+{
+  "name": "js-fun-promises-playground",
+  "version": "1.0.0",
+  "description": "Promises workshop",
+  "main": "playground.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
