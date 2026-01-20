@@ -72,4 +72,4 @@ function printSuccess() {
 readFileAndThen("./data/02_poem.txt", printSuccess);
 
 // Steps 2 and 3 can be rewritten with arrow functions as
-// readFileAndThen("./d", () => console.log("Second Step!"));
+// readFileAndThen("./data/02_poem.txt", () => console.log("Second Step!"));
