@@ -1,15 +1,19 @@
-// IMPORT READFILE
-
-// in order to use readfile in the project
-// we need to assign the value of the readfile property of the object that node:fs exports
-// to a new variable called readFile > const readFile = require("node:fs").readFile;
-// But it's easier to use shorthand and write: const { readFile } = require("node:fs");
-// if we wanted to import the whole fs library we would write > const fs = require("node:fs")
-// you don't need curly brackets because you are assigning a property but the entire object
-// and then we would access readFile via fs.readFile
-
-// N.B. The fact that readFile takes a callback function doesn't have anything to do with Asynchronicity, it's just an implementation detail
-//it's the internal workings of readFile that grants its asynchronous execution, meaning that the main JS thread execution can continue
+/* IMPORTING READFILE
+ * To use readFile, we need to assign the value of the 'readFile' property from the object exported by 'node:fs'.
+ *
+ * 1. Specific Import (Destructuring)
+ * Longhand:   const readFile = require("node:fs").readFile;
+ * Shorthand:  const { readFile } = require("node:fs");
+ *
+ * 2. Full Library Import
+ * If we want to import the whole library, we write: const fs = require("node:fs");
+ * - We do not use curly brackets here because we are assigning the entire object, not just a specific property.
+ * - We then access the method via: fs.readFile
+ *
+ * NOTE ON ASYNCHRONICITY
+ * The fact that readFile takes a callback function is an implementation detail; it is not what causes the asynchronicity.
+ * It is the internal workings of readFile that grant its asynchronous execution, ensuring the main JS thread can continue running.
+ */
 
 const { readFile } = require("node:fs");
 
@@ -34,10 +38,20 @@ console.log(
   "This log runs BEFORE the file is finished reading as the reading is asynchronous!"
 );
 
-//##TASK 1 EXTENSION > create a wrapper function to define a "second step"
-// I now want to use what we've written to write a new function readAndThen() which executes readFile() and, only once that's done, it performs a second step
-// To do it with callbacks we need to  wrap readFile() within a new function readAndThen() and make it take as a parameter a callback function that is invoked only after the value.
-// The second step is determined by the actual function we feed into it as an argument when we invoke readFileAndThen()
+/*
+ * ##TASK 1 EXTENSION: WRAPPER FUNCTION
+ * I want to use what I've already written to create a new function called 'readAndThen()'.
+ * This function will execute 'readFile()' and, only once that is done, perform a second step.
+ * This is a wrapper function.
+ *
+ * MY IMPLEMENTATION WITH CALLBACKS
+ * To achieve this, I need to wrap 'readFile()' within the new 'readAndThen()' function.
+ * - I will set up 'readAndThen()' to accept a callback function as a parameter.
+ * - This callback will be invoked only after the value has been successfully read.
+ *
+ * The "second step" will be determined by the specific function I pass as an
+ * argument when I invoke 'readAndThen()'.
+ */
 
 const taskExt = "TASK 1-extension >";
 
@@ -60,7 +74,7 @@ function readFileAndThen(fileToRead, callback) {
   });
 }
 
-// 2. We define what is the second step
+// 2. We define the second step
 function printSuccess() {
   console.log(
     taskExt,
@@ -68,7 +82,7 @@ function printSuccess() {
   );
 }
 
-// 3. We invoke our new function
+// 3. We invoke our new function with the callbacl
 readFileAndThen("./data/02_poem.txt", printSuccess);
 
 // Steps 2 and 3 can be rewritten with arrow functions as

@@ -1,8 +1,11 @@
+const { error } = require("node:console");
 const { readFile: readFilePromise } = require("node:fs/promises");
 const { readdir } = require("node:fs/promises");
-const { readFile } = require("node:fs");
 
-//##TASK 8. countWords()
+//##TASK 8 countWords() * use a `.then()` chain to read a file and immediately return its word count
+
+const errorX = "❌ Error:";
+const success = "✅ Success!";
 
 function countWords(filePath) {
   return readFilePromise(filePath, "utf-8").then((data) => {
@@ -15,13 +18,14 @@ const yourPromise8 = countWords("./data/02_poem.txt");
 
 yourPromise8
   .then((wordCount) => {
-    console.log("task 8 wordCount >", wordCount);
+    console.log(`TASK 8 >> ${success} >> wordCount >> ${wordCount}`);
   })
   .catch((err) => {
-    console.log(err, "<<Error13");
+    console.log(`TASK 8 >> ${errorX} >> ${err.message}`);
   });
 
-//##TASK 9. totalWords()
+//##TASK 9 RUNNING PROMISES IN PARALLEL use a Promise.all to read three files simultaneously
+// and calculate total words
 
 function totalWords() {
   const promise1 = countWords("./data/01_poem.txt");
@@ -42,13 +46,14 @@ const yourPromise10 = totalWords();
 
 yourPromise10
   .then((totalWordCount) => {
-    console.log("TASK 9 > Total word Count >", totalWordCount);
+    console.log(`TASK 9 >> ${success} >> Total wordCount >> ${totalWordCount}`);
   })
   .catch((error) => {
-    console.log("TASK 9 > Total word Count > ", error);
+    console.log(`TASK 8 >> ${errorX} >> ${err.message}`);
   });
 
-// ##TASK 10. countWordsInDir()
+// ##TASK 10 DYNAMIC PARALLELISM >> countWordsInDir()
+
 function countWordsInDir(directoryPath) {
   return (
     readdir(directoryPath)
@@ -69,18 +74,17 @@ function countWordsInDir(directoryPath) {
   );
 }
 
+// ##TASK 10 >> sample run
+
 const pathToLookInto = "./data";
 const yourPromise15 = countWordsInDir(pathToLookInto);
 
 yourPromise15
   .then((total) => {
     console.log(
-      "Task10 > The total word count of files within folder ",
-      pathToLookInto,
-      " is ",
-      total
+      `TASK 10 >> ${success} >> The total word count of files within folder ${pathToLookInto} is ${total}`
     );
   })
   .catch((error) => {
-    console.log("Task10 >", error);
+    console.log(`TASK 10 >> ${errorX} >> ${error.message}`);
   });
