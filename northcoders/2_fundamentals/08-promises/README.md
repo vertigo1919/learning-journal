@@ -1,4 +1,4 @@
-# JavaScript Promises Playground – Word Counter
+# JavaScript Promises
 
 A series of challenges transitioning from the **Callback Pattern** to **Promises**. This journal documents my progression from manual promisification to managing dynamic parallel execution.
 
