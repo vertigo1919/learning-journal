@@ -17,14 +17,10 @@ The goal was to practise working directly with SQL.
 - Preventing invalid or inconsistent data states
 - Automating common database operations
 
----
-
 ## Context
 
 - All SQL files were written by me.
 - The database requirements and scenarios were provided by **Northcoders** as part of a learning module.
-
----
 
 ## Running Locally
 
