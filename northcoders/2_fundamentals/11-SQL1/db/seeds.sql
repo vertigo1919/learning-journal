@@ -1,0 +1,215 @@
+TRUNCATE TABLE books RESTART IDENTITY CASCADE;
+TRUNCATE TABLE authors RESTART IDENTITY CASCADE;
+INSERT INTO books (
+        title,
+        price,
+        quantity_in_stock,
+        release_date,
+        is_fiction
+    )
+VALUES (
+        'The Hitchhiker''s Guide to the Galaxy',
+        8.99,
+        560,
+        '1997-10-12',
+        'true'
+    ),
+    (
+        'The Little Prince',
+        6.99,
+        1020,
+        '1943-04-06',
+        'true'
+    ),
+    (
+        'The Tale of Peter Rabbit',
+        5.99,
+        1000,
+        '1902-10-01',
+        'true'
+    ),
+    (
+        'Emma',
+        5.22,
+        390,
+        '1815-12-23',
+        'true'
+    ),
+    (
+        'Nineteen Eighty-Four: A Novel',
+        7.9,
+        420,
+        '1949-06-08',
+        'true'
+    ),
+    (
+        'The Handmaid''s Tale',
+        8.99,
+        10,
+        '1985-08-01',
+        'true'
+    ),
+    (
+        'The War of the Worlds',
+        2.50,
+        17,
+        '1897-04-01',
+        'true'
+    ),
+    (
+        'Captain Corelli''s Mandolin',
+        9.99,
+        0,
+        '1995-08-29',
+        'true'
+    ),
+    (
+        'A Brief History of Time',
+        8.25,
+        0,
+        '1988-04-01',
+        'false'
+    ),
+    (
+        'Pride and Prejudice',
+        6.99,
+        4,
+        '1813-01-28',
+        'true'
+    );
+
+
+INSERT INTO authors (
+        author_name,
+        trivia
+    )
+VALUES (
+        'Dan Brown',
+        'Favourite colour is not brown.' 
+    ),
+   (
+        'Antoine de Saint-Exupéry',
+        'He was a successful commercial pilot before World War II, working airmail routes in Europe, Africa, and South America.' 
+    ),
+    (
+        'Douglas Adams',
+        'He made two appearances in Monty Python''s Flying Circus.' 
+    ),
+    (
+        'Stephen Hawking',
+        'Doctors told him he wouldn''t live past his early 20s.' 
+    ),
+
+    (
+        'Eric Carle',
+        'When he was a young boy, Carle had a dream that he would build a bridge from Germany to America.' 
+    ),
+    (
+        'J. D. Salinger',
+        'The Catcher in the Rye was the only novel that J.D. Salinger published during his lifetime - not bad for a first try!' 
+    ),
+    (
+        'Beatrix Potter',
+        'Between 1881 and 1897 Potter kept a journal in which she jotted down her private thoughts in a secret code . This code was so fiendishly difficult it was not cracked and translated until 1958.' 
+    ),
+    (
+        'C. S. Lewis',
+        'Lewis set up a charitable trust to give away whatever money he received from his books.' 
+    ),
+    (
+        'Roald Dahl',
+        'During World War II he passed intelligence to MI6 from Washington.' 
+    ),
+    (
+        'Frank Herbert',
+        'While conversing with fungi expert Paul Stamets, Herbert revealed that the world of Dune was influenced by the lifecycle of mushrooms, with his imagination being helped along by a more "magic" variety.' 
+    ),
+    (
+        'Louis de Bernières',
+        'De Bernières is an avid musician who plays flute, mandolin, clarinet and guitar.' 
+    ),
+        (
+        'H. G. Wells',
+        'In 1914 H.G. Wells published a novel titled The World Set Free. In this book he described a weapon that was eerily similar to the first atomic bomb unleashed on the Japanese cities of Hiroshima and Nagasaki in 1945.' 
+    ),
+        (
+        'George Orwell',
+        'Orwell intentionally got himself arrested for being "drunk and incapable".' 
+    ),
+        (
+        'Jane Austen',
+        'The author of her first novel, Sense and Sensibility, was simply "A Lady", and her later works like Pride and Prejudice were credited to "the Author of Sense and Sensibility". She wasn''t named as the author of her novels until after her death!' 
+    ),
+        (
+        'Margaret Atwood',
+        'Atwood was the first author to contribute to The Future Library Project, which will take one writer''s contribution each year for one hundred years to be printed in the year 2114.' 
+    );
+
+
+/* Manual way
+UPDATE books
+SET author_id = 3
+WHERE title = 'The Hitchhiker''s Guide to the Galaxy'; 
+*/
+
+/*USing CASE
+UPDATE books
+SET author_id = CASE title
+    WHEN 'The Hitchhiker''s Guide to the Galaxy' THEN 3
+    WHEN 'The Little Prince' THEN 2
+    WHEN 'Emma' THEN 14
+    WHEN 'Nineteen Eighty-Four: A Novel' THEN 13
+    -- Add more as needed
+END
+WHERE title IN ('The Hitchhiker''s Guide to the Galaxy', 'The Little Prince', 'Emma', 'Nineteen Eighty-Four: A Novel');
+*/
+
+-- Using subqueries
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Douglas Adams')
+WHERE title = 'The Hitchhiker''s Guide to the Galaxy'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Antoine de Saint-Exupéry')
+WHERE title = 'The Little Prince'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Beatrix Potter')
+WHERE title = 'The Tale of Peter Rabbit'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Jane Austen')
+WHERE title = 'Emma'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'George Orwell')
+WHERE title = 'Nineteen Eighty-Four: A Novel'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Margaret Atwood')
+WHERE title = 'The Handmaid''s Tale'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'H. G. Wells')
+WHERE title = 'The War of the Worlds'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Jane Austen')
+WHERE title = 'Pride and Prejudice'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Louis de Bernières')
+WHERE title = 'Captain Corelli''s Mandolin'; 
+
+UPDATE books
+SET author_id = (SELECT author_id FROM authors WHERE author_name= 'Stephen Hawking')
+WHERE title = 'A Brief History of Time'; 
+
+insert into extra_books(title, price, quantity_in_stock, release_date, is_fiction)
+values
+('The Hitchhiker''s Guide to the Galaxy', 8.99, 560,'1997-10-12',true),
+('The Little Prince', 6.99, 1020, '1943-04-06',true),
+('Pride and Prejudice',6.99,4,'1813-01-28',true),
+('Pride and Prejudice',6.99,12,'1813-01-28',true),
+('Pride and Prejudice',6.99,2,'1813-01-28',true),
+('Pride and Prejudice',6.99,8,'1813-01-28',true);
