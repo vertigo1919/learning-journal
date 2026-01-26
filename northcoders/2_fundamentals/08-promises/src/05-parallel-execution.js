@@ -49,7 +49,7 @@ yourPromise10
     console.log(`TASK 9 >> ${success} >> Total wordCount >> ${totalWordCount}`);
   })
   .catch((error) => {
-    console.log(`TASK 8 >> ${errorX} >> ${err.message}`);
+    console.log(`TASK 9 >> ${errorX} >> ${error.message}`);
   });
 
 // ##TASK 10 DYNAMIC PARALLELISM >> countWordsInDir()

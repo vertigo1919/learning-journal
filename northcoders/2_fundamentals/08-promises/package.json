@@ -15,5 +15,8 @@
   "type": "commonjs",
   "devDependencies": {
     "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.7"
   }
 }
