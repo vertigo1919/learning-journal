@@ -1,3 +1,6 @@
+-- Purpose: Read-only queries used to explore and validate the dataset
+-- Notes: These queries should not modify data
+
 \echo '--- Books in Stock ---' 
 -- for pure SQL that runs everywhere use this trick: 
 -- SELECT '--- Books in Stock ---' AS " ";

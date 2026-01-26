@@ -1,3 +1,6 @@
+-- Purpose: Defines the database schema for the bookshop domain
+-- Notes: Some columns are added later using ALTER TABLE
+
 DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS authors;
 CREATE TABLE books (

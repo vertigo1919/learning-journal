@@ -1,3 +1,6 @@
+-- Purpose: Inserts predictable seed data for local development
+-- Notes: dataset provided by Northcoders, intentionally small
+
 TRUNCATE TABLE books RESTART IDENTITY CASCADE;
 TRUNCATE TABLE authors RESTART IDENTITY CASCADE;
 INSERT INTO books (

@@ -1,3 +1,6 @@
+-- Purpose: creates the database
+-- Notes: designed to be idempotent
+
 \echo '>>>>>>> Creating Database bookshop_db...'
 DROP DATABASE IF EXISTS bookshop_db;
 CREATE DATABASE bookshop_db;
