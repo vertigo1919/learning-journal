@@ -3,8 +3,6 @@
 This project contains a set of SQL exercises focused on schema design, queries, and stored procedures.
 The goal was to practise working directly with SQL.
 
----
-
 ## Core SQL Concepts
 
 - Relational schema design with appropriate data types and constraints
