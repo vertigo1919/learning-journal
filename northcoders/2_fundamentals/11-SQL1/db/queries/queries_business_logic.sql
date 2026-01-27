@@ -34,6 +34,5 @@ SELECT title, price FROM books WHERE quantity_in_stock > 0 AND price <7;
 \echo '--- The books that are under £6 or are non fiction ---' 
 SELECT title, price FROM books WHERE is_fiction = false AND price <6;
 
-
-
-
+\echo '--- The books that are under £6 or are non fiction ---' 
+SELECT title, price FROM books WHERE is_fiction = false AND price <6;
