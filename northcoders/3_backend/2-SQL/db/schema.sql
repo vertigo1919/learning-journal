@@ -27,7 +27,7 @@ ALTER TABLE books
 ADD author_id  INT,
 
 --we give the rule a human name
-ADD CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES authors(author_id);
+ADD CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES authors(author_id) ON DELETE CASCADE;
 
 -- 5) CREATE extra_books
 CREATE TABLE extra_books(

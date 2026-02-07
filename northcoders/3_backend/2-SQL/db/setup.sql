@@ -1,7 +1,7 @@
 -- Purpose: creates a development and a test database
 -- Notes: an idempotent reset is performed to ensure an idempotent initialisation is possible
 
-\echo '>>>>>>> Resetting learning_bookshop dev and test DBs...'
+\echo '>>>>>>> Resetting nc_bookshop dev and test DBs...'
 DROP DATABASE IF EXISTS nc_bookshop_dev;
 DROP DATABASE IF EXISTS nc_bookshop_test;
 CREATE DATABASE NC_bookshop_dev;
@@ -26,3 +26,4 @@ CREATE DATABASE NC_bookshop_test;
 \i ./db/schema.sql
 
 \echo '💪 >>>>>>> Success! Setup of nc_bookshop dev and test DBs completed :)'
+

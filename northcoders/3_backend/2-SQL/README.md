@@ -54,7 +54,6 @@ Requirements:
 
 ```bash
 npm run setup
-npm run seed-dev
 ```
 
 ### Running the queries
