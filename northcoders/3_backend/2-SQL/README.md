@@ -74,6 +74,15 @@ npm run query:genres
 npm run sql -- .db/procedures/nameOfProcedure.sql
 ```
 
+> [!IMPORTANT] > **Reseting the Data**
+> These procedures modify the database state permanently (e.g., deleting rows or changing prices).
+>
+> To restore the original dataset and reset all IDs/sequences, simply run the seed script again:
+>
+> ```bash
+> npm run seed-dev
+> ```
+
 ## Context
 
 - All SQL files were written by me.
