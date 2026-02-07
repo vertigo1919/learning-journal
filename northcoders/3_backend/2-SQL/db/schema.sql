@@ -1,5 +1,6 @@
 -- Purpose: Defines the database schema for the bookshop domain
--- Notes: The order of operations is not by design, but based on learning patterns
+-- Notes: The execution order follows the course learning module structure, not standard best practices.
+-- In particular tables are created before their dependencies to demonstrate ALTER TABLE.
 
 -- 1) Implement idempotency
 DROP TABLE IF EXISTS books, authors, extra_books, genres;

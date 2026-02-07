@@ -1,16 +1,16 @@
 -- Purpose: creates a development and a test database
 -- Notes: an idempotent reset is performed to ensure an idempotent initialisation is possible
 
-\echo '>>>>>>> Resetting nc_bookshop dev and test DBs...'
-DROP DATABASE IF EXISTS nc_bookshop_development;
+\echo '>>>>>>> Resetting learning_bookshop dev and test DBs...'
+DROP DATABASE IF EXISTS nc_bookshop_dev;
 DROP DATABASE IF EXISTS nc_bookshop_test;
-CREATE DATABASE nc_bookshop_development;
-CREATE DATABASE nc_bookshop_test;
+CREATE DATABASE NC_bookshop_dev;
+CREATE DATABASE NC_bookshop_test;
 
 -- SETUP DEVELOPMENT ENVIROMENT (Structure + Data)
 
 \echo '>>>>>>> ⚙️ Connecting to database (dev)...'
-\c nc_bookshop_development
+\c nc_bookshop_dev
 
 \echo '>>>>>>> ⚙️ Creating tables (dev)...'
 \i ./db/schema.sql
