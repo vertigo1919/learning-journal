@@ -7,9 +7,9 @@
     "test": "jest",
     "setup": "psql -d postgres -f ./db/setup.sql",
     "seed-dev": "psql -d nc_bookshop_dev -f ./db/seeds.sql ",
-    "query:inventory": "psql -d nc_bookshop_dev -f ./db/queries_inventory.sql",
-    "query:authors": "psql -d nc_bookshop_dev -f ./db/queries_authors.sql",
-    "query:genres": "psql -d nc_bookshop_dev -f ./db/queries_genres.sql",
+    "query:inventory": "psql -d nc_bookshop_dev -f ./db/queries/queries_inventory.sql",
+    "query:authors": "psql -d nc_bookshop_dev -f ./db/queries/queries_authors.sql",
+    "query:genres": "psql -d nc_bookshop_dev -f ./db/queries/queries_genres.sql",
     "sql": "psql -d nc_bookshop_dev -f"
   },
   "keywords": [],

@@ -2,8 +2,6 @@
 -- Notes: dataset provided by Northcoders, intentionally small
 
 -- 1) TRUNCATION
-/* The truncation below is not strictly necessary as tables are dropped by the schema
- Leaving it here on the offchance this file is run on its own */
 TRUNCATE TABLE books, authors, genres RESTART IDENTITY CASCADE;
 
 -- 2) POPULATE BOOKS
@@ -353,3 +351,5 @@ VALUES (1, 1),
     -- Brief History of Time -> Science
     (9, 8);
     -- Brief History of Time -> Classics;
+
+\echo '💪 >>>>>>> Success! Seeding of nc_bookshop-dev was sucessful!'
