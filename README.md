@@ -13,17 +13,33 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 - **Focus:** JavaScript, Node.js, Test-Driven Development (TDD), Jest, Pair Programming.
 - _Note: These are snapshots of daily progression and may not represent final production code._
 
-### 2. /algorithms
+#### 📑 Index
 
-Solutions to coding challenges.
+| Module           | Exercise / Topic                                                                           | Concepts Covered                                                                 |
+| :--------------- | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
+| **Fundamentals** | **[Data Structures (Stack & Queue)](./northcoders/2_fundamentals/05-OOP-data-structures)** | Factory Functions, Prototypal Inheritance, Big O (O(1) vs O(n)), LIFO/FIFO.      |
+|                  | **[OOP: Hero Journey](./northcoders/2_fundamentals/06%20-OOP-inheritance/hero-journey)**   | Classes & Inheritance, Dependency Injection, Separation of Concerns.             |
+|                  | **[Async: Callbacks (Cat Server)](./northcoders/2_fundamentals/07-callback-hell)**         | Event Loop, Error-First Pattern, Inversion of Control, Concurrency.              |
+|                  | **[Async: Promises](./northcoders/2_fundamentals/08-promises)**                            | Promisification, `Promise.all`, Chain flattening, `fs/promises`.                 |
+|                  | **[Async: Modern Syntax](./northcoders/2_fundamentals/09-async-await)**                    | `async/await`, `try/catch`, `axios`, ES Modules vs CommonJS.                     |
+| **Backend**      | **[HTTP & Streams](./northcoders/3_backend/1-GET-requests)**                               | `https` module vs `fetch`, Streams & Buffers, Event Emitters, Request Lifecycle. |
+|                  | **[SQL Fundamentals](./northcoders/3_backend/2-SQL)**                                      | Relational Design, Normalization, Joins, `dotenv`, Connection Pooling (`pg`).    |
 
-- **Focus:** Data Structures, Algorithms, Big O notation efficiency.
+### 2. Future Learning Targets 🚀
 
-### 3. /self-study
+I am currently expanding this journal to include:
 
-Independent exploration of other languages
+- **Algorithms:** Data Structures & Big O efficiency.
+- **Self-Study:** Independent exploration of Bash, Python and Rust.
 
-- **Current Focus:** Python, Rust, React, Bash.
+---
+
+## 🛠 Tech Stack & Tools
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=flat&logo=jest&logoColor=white)
 
 ## 🚀 Portfolio Highlights
 
