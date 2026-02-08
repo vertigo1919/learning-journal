@@ -48,12 +48,28 @@ This project uses a Node.js script to set up the database.
 Requirements:
 
 - PostgreSQL
+- pg
 - Node.js
 - Jest
 - dotenv
 
 ```bash
 npm run setup
+```
+
+Create the following .env files in the root directory:
+
+.env.development
+
+```bash
+PGDATABASE=nc_bookshop_dev
+.env.test
+```
+
+.env.test
+
+```Bash
+PGDATABASE=nc_bookshop_test
 ```
 
 ### Running the queries
