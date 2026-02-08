@@ -50,6 +50,10 @@ While raw SQL scripts are great for database setup, real-world applications inte
   - `books.models.js`: Logic for book-related data (Seraching, Deleting, Updating)
 - `run-programmatic-queries.js`: A developer script to execute and verify Model logic in the terminal.
 
+### Database ERD
+
+![Database ERD](./assets/erd.png)
+
 ## 🚀 Running Locally
 
 ### Setup
