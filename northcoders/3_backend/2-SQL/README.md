@@ -47,8 +47,7 @@ While raw SQL scripts are great for database setup, real-world applications inte
 - `db/connection.js`: Configures the **PG Pool** to connect to the correct database (Test vs Dev) based on `ENV` variables.
 - `.env.test` / `.env.development`: Stores environment-specific configuration.
 - `models/`: Contains JavaScript functions that build and execute SQL queries.
-  - `books.models.js`: Logic for book-related data (Searching, Updating).
-  - `authors.models.js`: Logic for author-related data.
+  - `books.models.js`: Logic for book-related data (Seraching, Deleting, Updating)
 - `run-programmatic-queries.js`: A developer script to execute and verify Model logic in the terminal.
 
 ## 🚀 Running Locally
@@ -115,7 +114,7 @@ npm run sql -- .db/procedures/nameOfProcedure.sql
 To run the JavaScript logic layer and see the output of the Models in your terminal:
 
 > ```bash
-> npm run run-pg
+> npm run models-demo
 > ```
 
 ## Context
