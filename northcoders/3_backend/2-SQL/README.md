@@ -24,7 +24,7 @@ This project demonstrates core SQL principles including schema design, complex q
 - Performing controlled updates (e.g., seasonal price changes) and "soft" or "hard" deletions.
 - Automating common database maintenance tasks.
 
-## 4/ Programmatic Logic (The Model Layer)
+## 4. Programmatic Logic (The Model Layer)
 
 While raw SQL scripts are great for database setup, real-world applications interact with data dynamically via JavaScript. This project implements the **Model** portion of the MVC pattern:
 
