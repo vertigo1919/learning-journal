@@ -10,7 +10,8 @@
     "query:inventory": "psql -d nc_bookshop_dev -f ./db/queries/queries_inventory.sql",
     "query:authors": "psql -d nc_bookshop_dev -f ./db/queries/queries_authors.sql",
     "query:genres": "psql -d nc_bookshop_dev -f ./db/queries/queries_genres.sql",
-    "sql": "psql -d nc_bookshop_dev -f"
+    "sql": "psql -d nc_bookshop_dev -f",
+    "run-pg": "node run-programmatic-queries.js"
   },
   "keywords": [],
   "author": "",

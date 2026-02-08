@@ -24,6 +24,14 @@ This project demonstrates core SQL principles including schema design, complex q
 - Performing controlled updates (e.g., seasonal price changes) and "soft" or "hard" deletions.
 - Automating common database maintenance tasks.
 
+## 4/ Programmatic Logic (The Model Layer)
+
+While raw SQL scripts are great for database setup, real-world applications interact with data dynamically via JavaScript. This project implements the **Model** portion of the MVC pattern:
+
+- **Parameterized Queries:** Every model uses `$1, $2` placeholders to prevent SQL Injection.
+- **Async/Await:** Leveraging Promises for clean, non-blocking database interactions.
+- **Logic Encapsulation:** JS functions handle data formatting and business rules before hitting the database.
+
 ## 🛠 Project Structure
 
 ### Database Files
@@ -38,6 +46,10 @@ This project demonstrates core SQL principles including schema design, complex q
 
 - `db/connection.js`: Configures the **PG Pool** to connect to the correct database (Test vs Dev) based on `ENV` variables.
 - `.env.test` / `.env.development`: Stores environment-specific configuration.
+- `models/`: Contains JavaScript functions that build and execute SQL queries.
+  - `books.models.js`: Logic for book-related data (Searching, Updating).
+  - `authors.models.js`: Logic for author-related data.
+- `run-programmatic-queries.js`: A developer script to execute and verify Model logic in the terminal.
 
 ## 🚀 Running Locally
 
@@ -72,7 +84,7 @@ PGDATABASE=nc_bookshop_dev
 PGDATABASE=nc_bookshop_test
 ```
 
-### Running the queries
+### Running the manual SQL queries
 
 Run pre-written SQL scripts to analyze the data
 
@@ -82,7 +94,7 @@ npm run query:authors
 npm run query:genres
 ```
 
-### Run the stored procedures
+### Run the manual SQL stored procedures
 
 ```bash
 # Note: The '--' is required to pass the file path argument
@@ -96,6 +108,14 @@ npm run sql -- .db/procedures/nameOfProcedure.sql
 >
 > ```bash
 > npm run seed-dev
+> ```
+
+### Execute Programmatic Queries
+
+To run the JavaScript logic layer and see the output of the Models in your terminal:
+
+> ```bash
+> npm run run-pg
 > ```
 
 ## Context
