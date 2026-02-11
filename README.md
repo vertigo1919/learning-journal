@@ -15,22 +15,16 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 
 #### 📑 Index
 
-| Module           | Exercise / Topic                                                                           | Concepts Covered                                                                 |
-| :--------------- | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| **Fundamentals** | **[Data Structures (Stack & Queue)](./northcoders/2_fundamentals/05-OOP-data-structures)** | Factory Functions, Prototypal Inheritance, Big O (O(1) vs O(n)), LIFO/FIFO.      |
-|                  | **[OOP: Hero Journey](./northcoders/2_fundamentals/06%20-OOP-inheritance/hero-journey)**   | Classes & Inheritance, Dependency Injection, Separation of Concerns.             |
-|                  | **[Async: Callbacks (Cat Server)](./northcoders/2_fundamentals/07-callback-hell)**         | Event Loop, Error-First Pattern, Inversion of Control, Concurrency.              |
-|                  | **[Async: Promises](./northcoders/2_fundamentals/08-promises)**                            | Promisification, `Promise.all`, Chain flattening, `fs/promises`.                 |
-|                  | **[Async: Modern Syntax](./northcoders/2_fundamentals/09-async-await)**                    | `async/await`, `try/catch`, `axios`, ES Modules vs CommonJS.                     |
-| **Backend**      | **[HTTP & Streams](./northcoders/3_backend/1-GET-requests)**                               | `https` module vs `fetch`, Streams & Buffers, Event Emitters, Request Lifecycle. |
-|                  | **[SQL Fundamentals](./northcoders/3_backend/2-SQL)**                                      | Relational Design, Normalization, Joins, `dotenv`, Connection Pooling (`pg`).    |
-
-### 2. Future Learning Targets 🚀
-
-I am currently expanding this journal to include:
-
-- **Algorithms:** Data Structures & Big O efficiency.
-- **Self-Study:** Independent exploration of Bash, Python and Rust.
+| Module           | Exercise / Topic                                                                                                                      | Concepts Covered                                                                                                                                                                                 |
+| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fundamentals** | **[Data Structures (Stack & Queue)](./northcoders/2_fundamentals/05-OOP-data-structures)**                                            | Factory Functions, Prototypal Inheritance, Big O (O(1) vs O(n)), LIFO/FIFO.                                                                                                                      |
+|                  | **[OOP: Hero Journey](./northcoders/2_fundamentals/06%20-OOP-inheritance/hero-journey)**                                              | Classes & Inheritance, Dependency Injection, Separation of Concerns.                                                                                                                             |
+|                  | **[Async: Callbacks (Cat Server)](./northcoders/2_fundamentals/07-callback-hell)**                                                    | Event Loop, Error-First Pattern, Inversion of Control, Concurrency.                                                                                                                              |
+|                  | **[Async: Promises](./northcoders/2_fundamentals/08-promises)**                                                                       | Promisification, `Promise.all`, Chain flattening, `fs/promises`.                                                                                                                                 |
+|                  | **[Async: Modern Syntax](./northcoders/2_fundamentals/09-async-await)**                                                               | `async/await`, `try/catch`, `axios`, ES Modules vs CommonJS.                                                                                                                                     |
+| **Backend**      | **[HTTP & Streams](./northcoders/3_backend/1-GET-requests)**                                                                          | `https` module vs `fetch`, Streams & Buffers, Event Emitters, Request Lifecycle.                                                                                                                 |
+|                  | **[SQL Fundamentals](./northcoders/3_backend/2-SQL)**                                                                                 | Relational Design, Normalization, Joins, `dotenv`, Connection Pooling (`pg`).                                                                                                                    |
+| **Frontend**     | **[Interactive DOM Timer](s://vertigo1919.github.io/learning-journal/northcoders/4_frontend/1-HTML-CSS-DOM/00-DOM-timer/index.html)** | Event Delegation, Dynamic DOM Generation, State Management, CSS Flexbox. [Live Demo 🚀](https://www.google.com/search?q=https://vertigo1919.github.io/learning-journal/4_frontend/00-DOM-timer/) |
 
 ---
 
