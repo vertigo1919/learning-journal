@@ -1,6 +1,6 @@
 # ⏳ DOM Timer: Frontend Study
 
-[🚀 View Live Demo](https://vertigo1919.github.io/learning-journal/northcoders/4_frontend/1-HTML-CSS-DOM/00-DOM-timer/index.html)
+[🚀 View Live Demo](https://vertigo1919.github.io/learning-journal/northcoders/4_frontend/00-DOM-timer/index.html)
 
 My first project moving from backend logic to the browser. I built this to practice turning a static design into a functional tool using JavaScript to control the DOM.
 
