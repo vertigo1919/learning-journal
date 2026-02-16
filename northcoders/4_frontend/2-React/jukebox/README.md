@@ -1,6 +1,6 @@
 # 🎵 React Jukebox: Component Architecture
 
-[🚀 View Live Demo](https://vertigo1919.github.io/learning-journal/northcoders/4_frontend/2-React/jukebox/index.html)
+[🚀 View Live Demo](https://react-jukebox-andrea.netlify.app/)
 
 My first project moving from vanilla JavaScript to **React**. I built this to understand how to break a user interface into reusable parts and manage data flow through "props" instead of direct DOM manipulation.
 
@@ -20,6 +20,21 @@ My first project moving from vanilla JavaScript to **React**. I built this to un
 - `CurrentlyPlaying.jsx`: A specialized component just for the "Hero" banner.
 - `Stats.jsx`: Visualizes data using a leaderboard style.
 
-- **index.css:** Modern styling using Glassmorphism, CSS Grid/Flexbox, and keyframe animations for the "pulse" effect.
+- **index.css:** Modern styling CSS Grid/Flexbox and keyframe animations for the "pulse" effect.
+
+---
+
+### 🚀 Deployment Workflow (Netlify Monorepo)
+
+Since this project lives inside a larger "Learning Journal" repository, I implemented a targeted deployment strategy using **Netlify**. This allows me to host multiple React applications from a single GitHub repository without conflicts.
+
+**The Process:**
+
+1. **Targeted Build:** Configured the Netlify **Base Directory** to point specifically to `northcoders/4_frontend/2-React/jukebox`.
+2. **Build Command:** Triggered `npm run build` only within that subfolder to generate the production-ready `dist` folder.
+3. **Automated CI/CD:** Every push to the `main` branch of the journal automatically triggers a new build, ensuring the live demo stays in sync with my code.
+4. **Clean Routing:** Set the Vite `base` to `./` to ensure all assets are served correctly from the Netlify root domain.
 
 _Developed as part of the Frontend module at Northcoders._
+
+---
