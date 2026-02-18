@@ -2,7 +2,8 @@
 
 This repository serves as a permanent archive of my coding progression, daily drills, and algorithm practice, etc.
 
-> **NB:** For my full-stack production applications, please visit my pinned repos.
+> [!IMPORTANT]
+> For my production applications, please visit my [pinned repositories](https://github.com/vertigo1919) on my profile page.
 
 ## 📂 Repository Structure
 
@@ -26,6 +27,7 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 |                  | **[SQL Fundamentals](./northcoders/3_backend/2-SQL)**                                                                 | Relational Design, Normalization, Joins, `dotenv`, Connection Pooling (`pg`).                                                                                                          |
 | **Frontend**     | **[Interactive DOM Timer](./northcoders/4_frontend/00-DOM-timer)**                                                    | Event Delegation, Dynamic DOM Generation, State Management, CSS Flexbox. [Live Demo 🚀](https://vertigo1919.github.io/learning-journal/northcoders/4_frontend/00-DOM-timer/index.html) |
 | **Frontend**     | **[React Jukebox](https://github.com/vertigo1919/learning-journal/tree/main/northcoders/4_frontend/2-React/jukebox)** | Component Architecture, Props, Dynamic List Rendering, Conditional CSS, Monorepo Deployment. [Live Demo 🚀](https://react-jukebox-andrea.netlify.app/)                                 |
+| **Frontend**     | **[React: User Directory](https://www.google.com/search?q=./northcoders/4_frontend/2-React/user-directory)**          | `useEffect` (Dependency Arrays), `useState`, Async Data Fetching, Error Handling, Loading States, CSS Grid. [Live Demo 🚀](https://nc-react-user-directory.netlify.app/)               |
 
 ---
 
@@ -40,13 +42,7 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 
 If you are looking for production-standard applications, please view my dedicated project repositories.
 
-## 🛠 Tech Stack & Tools
-
-## 🚀 Portfolio Highlights
+## 🚀 Learning Journal Mini Projects
 
 - **React Jukebox:** A component-based music player exploring state-driven UI and props-down data flow. Hosted on Netlify to demonstrate monorepo CI/CD workflows.
 - **DOM Timer:** A functional countdown tool practicing direct DOM manipulation and event delegation in vanilla JavaScript.
-
----
-
-Would you like me to help you format a specific **README** for your next project, or perhaps help you set up that `.gitignore` we discussed to keep the `dist` folders out of your history?

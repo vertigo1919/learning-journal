@@ -1,3 +1,4 @@
+/* --- Card Container --- */
 .user-card {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -6,6 +7,8 @@
   max-width: 380px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Ensure the card takes up space even if empty */
+  min-height: 200px;
 }
 
 .user-card:hover {
@@ -13,6 +16,7 @@
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
 }
 
+/* --- Card Header --- */
 .user-card-header {
   background: linear-gradient(135deg, var(--primary-color), #858cff);
   padding: 2rem 1.5rem;
@@ -27,10 +31,12 @@
   letter-spacing: -0.5px;
 }
 
+/* --- Card Body --- */
 .user-card-body {
   padding: 2rem;
 }
 
+/* --- Grid Layout for Data --- */
 .user-info {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -58,10 +64,30 @@
   line-height: 1.5;
 }
 
-button {
-  display: block;
-  width: calc(100% - 4rem);
-  margin: 0 2rem 2rem;
+/* --- NEW: Widget Wrapper --- */
+/* Centers the card and the buttons in a column */
+.user-directory-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Space between card and buttons */
+  width: 100%;
+  max-width: 380px; /* Matches card width */
+}
+
+/* --- NEW: Navigation Bar --- */
+/* Places buttons side-by-side */
+.user-directory-nav {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* --- UPDATED: Buttons --- */
+/* Renamed to match your React class and removed 'margin' so they fit in the nav */
+.user-directory-button {
+  flex: 1; /* Makes buttons grow equally */
   padding: 0.8rem;
   background-color: var(--text-main);
   color: white;
@@ -69,9 +95,25 @@ button {
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.1s;
 }
 
-button:hover {
+.user-directory-button:hover {
   background-color: var(--primary-color);
+}
+
+.user-directory-button:active {
+  transform: scale(0.98);
+}
+
+/* --- NEW: Error State --- */
+.user-card.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: #d32f2f; /* Red text for error */
+  gap: 1rem;
 }
