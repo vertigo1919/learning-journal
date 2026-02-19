@@ -29,8 +29,6 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 |                  | [React: Jukebox](./northcoders/4_frontend/2-React/1-jukebox)                         | Component Architecture, Props, Dynamic List Rendering.               | [Live Demo 🚀](https://react-jukebox-andrea.netlify.app/)                                                     |
 |                  | [React: User Directory](./northcoders/4_frontend/2-React/2-data-fetching-in-react)   | `useEffect`, `useState`, Async Data Fetching, Error Handling.        | [Live Demo 🚀](https://nc-react-user-directory.netlify.app/)                                                  |
 
----
-
 ## 🛠 Tech Stack & Tools
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
