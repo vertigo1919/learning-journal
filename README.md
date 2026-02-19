@@ -38,11 +38,8 @@ Daily exercises and pair-programming drills completed during the Northcoders Sof
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=flat&logo=jest&logoColor=white)
 
-## 🚀 Portfolio Highlights
-
-If you are looking for production-standard applications, please view my dedicated project repositories.
-
 ## 🚀 Learning Journal Mini Projects
 
-- **React Jukebox:** A component-based music player exploring state-driven UI and props-down data flow. Hosted on Netlify to demonstrate monorepo CI/CD workflows.
-- **DOM Timer:** A functional countdown tool practicing direct DOM manipulation and event delegation in vanilla JavaScript.
+- **DOM Timer:** [Live Demo 🚀](https://react-jukebox-andrea.netlify.app/)A functional countdown tool practicing direct DOM manipulation and event delegation in vanilla JavaScript.
+- **React Jukebox:** [Live Demo 🚀](https://vertigo1919.github.io/learning-journal/northcoders/4_frontend/00-DOM-timer/index.html) A component-based music player exploring state-driven UI and props-down data flow. Hosted on Netlify to demonstrate monorepo CI/CD workflows.
+- **React: User Directory** [Live Demo 🚀](https://nc-react-user-directory.netlify.app/) This project focuses on handling asynchronous requests and ensuring the UI accurately reflects the current state of the data. It allows the user to broswe a diretory of users data fetched from an API.
